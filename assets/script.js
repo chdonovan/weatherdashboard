@@ -34,7 +34,19 @@ searchButton.click(function(){
         }).then(function(response){
             //list group append an li w/ set text
             //console.log (response.name)
-            
+            var cityName = $("list-group").addClass("list-group-item");
+            cityName.append("<li>" + response.Name + "</li>");
+            // local storage
+            var local = localStorage.setItem(keyCount, response.name);
+            keyCount = keyCount + 1;
+
+            // Start current Weather Append
+            var currentCard = $(".currentCard").append("<div>").addClass("card-body");
+            currentCard.empty();
+            var currentName = currentCard.append("<p>");
+            // addClass("card-text")
+            currentCard.append(currentName);
+
         })
     }
 
