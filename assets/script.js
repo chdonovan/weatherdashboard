@@ -55,6 +55,12 @@ searchButton.click(function(){
             var currentTemp = currentName.append("<p>");
             currentName.append(currentTemp);
             currentTemp.append("<p>" + "Temperature: " + response.main.temp + "<p>");
+            // add humidity 
+            currentTemp.append("<p>" + "Humidity: " + response.main.humidity + "%" + "<p>");
+            // add wind speed
+            currentTemp.append("<p>" + "Wind Speed: " + response.wind.speed + "<p>");
+
+            
 
         })
     }
