@@ -71,6 +71,7 @@ searchButton.click(function(){
             }).then(function(response){
 
                 var currentUV = currentTemp.append("<p>" + "UV Index: " + response.value + "<p>").addClass("card-text");
+                currentUV.setAttribute("class","badge badge-danger");
                 currentUV.addClass("UV");
                 currentTemp.append(currentUV);
 
