@@ -7,3 +7,4 @@ Input a city to see todays weather and a five day forecast
 -- repo link - https://github.com/chdonovan/weatherdashboard
 
 ### screenshot
+![](assets/screensout.png)

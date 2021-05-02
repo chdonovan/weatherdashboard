@@ -70,8 +70,8 @@ searchButton.click(function(){
                 method: "GET"
             }).then(function(response){
 
-                var currentUV = currentTemp.append("<p>" + "UV Index: " + response.value + "<p>").addClass("card-text");
-                currentUV.setAttribute("class","badge badge-danger");
+                var currentUV = currentTemp.append("<span>" + "UV Index: " + response.value + "<span>").addClass("card-text");
+                
                 currentUV.addClass("UV");
                 currentTemp.append(currentUV);
 
